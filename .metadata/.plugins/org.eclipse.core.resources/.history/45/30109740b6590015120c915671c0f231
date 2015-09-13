@@ -1,0 +1,22 @@
+package ar.edu.unlam.tallerweb.cuentaBancaria;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class testCuentaBancaria {
+
+	@Test
+	public void testDepositar() {
+		CuentaBancaria deposito= new CuentaBancaria(1,100);
+		
+		deposito.depositar(20);
+		deposito.depositar(80);
+		deposito.depositar(100);
+		
+		Assert.assertTrue(condition);
+		
+
+	}
+
+}

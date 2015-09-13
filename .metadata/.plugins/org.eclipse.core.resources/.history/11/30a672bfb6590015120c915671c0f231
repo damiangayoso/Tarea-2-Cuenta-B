@@ -1,0 +1,20 @@
+package ar.edu.unlam.tallerweb.cuentaBancaria;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class testCuentaBancaria {
+
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testDepositar() {
+		CuentaBancaria deposito= new CuentaBancaria(1,100);
+		
+		Assert.assertTrue(deposito.depositar(100));
+		Assert.assertTrue(deposito.depositar(150));
+		Assert.assertTrue(deposito.depositar(50));
+		
+		Assert.assertTrue(deposito.consulta());
+	}
+
+}

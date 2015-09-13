@@ -1,0 +1,13 @@
+package ar.edu.unlam.tallerweb.cuentaBancaria;
+
+import org.junit.Test;
+
+public class testCuentaBancaria {
+
+	@Test
+	public void testDepositar() {
+		CuentaBancaria deposito= new CuentaBancaria(1,100);
+
+	}
+
+}

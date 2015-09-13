@@ -1,0 +1,39 @@
+package ar.edu.unlam.tallerweb.cuentaBancaria;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class testCuentaBancaria {
+
+//	@Test
+//	public void testDepositar() {
+//		CuentaBancaria deposito= new CuentaBancaria(1,100);
+//		
+//		Assert.assertTrue(deposito.depositar(100));
+//		Assert.assertTrue(deposito.depositar(150));
+//		Assert.assertTrue(deposito.depositar(50));
+//		
+//		Assert.assertTrue(deposito.consulta());
+//	}
+//	
+//	@Test
+//	public void testDepositarNegativo() {
+//		CuentaBancaria deposito= new CuentaBancaria(1,100);
+//		
+//		Assert.assertFalse(deposito.depositar(-20));
+//		Assert.assertFalse(deposito.depositar(-25));
+//		
+//		Assert.assertTrue(deposito.consulta());
+//	}
+	
+	@Test
+	public void testExtraer() {
+		CuentaBancaria deposito= new CuentaBancaria(1,500);
+		
+		Assert.assertTrue(deposito.extraer(120));
+		Assert.assertTrue(deposito.extraer(180));
+		
+		Assert.assertTrue(deposito.consulta());
+	}
+
+}
